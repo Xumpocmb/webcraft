@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 11:32+0300\n"
-"PO-Revision-Date: 2026-01-04 09:30+0300\n"
+"POT-Creation-Date: 2026-01-04 12:48+0300\n"
+"PO-Revision-Date: 2026-01-04 11:40+0300\n"
 "Last-Translator: Gemini\n"
 "Language-Team: Russian <ru@li.org>\n"
 "Language: ru\n"
@@ -30,57 +30,51 @@ msgstr "Английский"
 #: app_blog/templates/app_blog/article_detail.html:4
 #: app_home/templates/app_home/base.html:45
 msgid "Блог"
-msgstr ""
+msgstr "Блог"
 
 #: app_blog/templates/app_blog/article_detail.html:13
 msgid "Нравится"
-msgstr ""
+msgstr "Нравится"
 
 #: app_blog/templates/app_blog/article_detail.html:22
 msgid "Комментарии"
-msgstr ""
+msgstr "Комментарии"
 
 #: app_blog/templates/app_blog/article_detail.html:29
 msgid "Комментариев пока нет."
-msgstr ""
+msgstr "Комментариев пока нет."
 
 #: app_blog/templates/app_blog/article_detail.html:35
-#, fuzzy
-#| msgid "Отправить заявку"
 msgid "Оставить комментарий"
-msgstr "Отправить заявку"
+msgstr "Оставить комментарий"
 
 #: app_blog/templates/app_blog/article_detail.html:39
-#, fuzzy
-#| msgid "Отправить заявку"
 msgid "Отправить"
-msgstr "Отправить заявку"
+msgstr "Отправить"
 
 #: app_blog/templates/app_blog/article_detail.html:43
 msgid "Войдите"
-msgstr ""
+msgstr "Войдите"
 
 #: app_blog/templates/app_blog/article_detail.html:43
 msgid "чтобы оставить комментарий."
-msgstr ""
+msgstr "чтобы оставить комментарий."
 
 #: app_blog/templates/app_blog/article_list.html:4
-#, fuzzy
-#| msgid "Контакты"
 msgid "Блог - WebCraft Studio"
-msgstr "Контакты"
+msgstr "Блог - WebCraft Studio"
 
 #: app_blog/templates/app_blog/article_list.html:9
 msgid "Наш Блог"
-msgstr ""
+msgstr "Наш Блог"
 
 #: app_home/templates/app_home/about_page.html:4
 msgid "О нас - WebCraft Studio"
-msgstr ""
+msgstr "О нас - WebCraft Studio"
 
 #: app_home/templates/app_home/base.html:8
 msgid "WebCraft Studio"
-msgstr ""
+msgstr "WebCraft Studio"
 
 #: app_home/templates/app_home/base.html:41
 #: app_home/templates/app_home/includes/about.html:4
@@ -97,7 +91,7 @@ msgstr "Почему мы?"
 
 #: app_home/templates/app_home/base.html:44
 msgid "Отзывы"
-msgstr ""
+msgstr "Отзывы"
 
 #: app_home/templates/app_home/base.html:46
 msgid "Контакты"
@@ -108,40 +102,24 @@ msgid "Все права защищены."
 msgstr "Все права защищены."
 
 #: app_home/templates/app_home/contact_page.html:4
-#, fuzzy
-#| msgid "Контакты"
 msgid "Контакты - WebCraft Studio"
-msgstr "Контакты"
+msgstr "Контакты - WebCraft Studio"
 
 #: app_home/templates/app_home/includes/about.html:5
-msgid ""
-"это команда профессионалов, объединенных страстью к веб-разработке и "
-"стремлением к совершенству. Мы начали свой путь в 2010 году как небольшое "
-"сообщество единомышленников и быстро выросли в полноценную студию, способную "
-"решать самые сложные и нестандартные задачи. За годы работы мы реализовали "
-"более 300 успешных проектов, от небольших стартапов до крупных федеральных "
-"компаний. Наша экспертиза охватывает широкий спектр технологий, включая "
-"Python, Django, React, и глубокое понимание принципов UI/UX дизайна. Мы "
-"гордимся тем, что каждый наш проект — это не просто сайт, а эффективный "
-"инструмент для достижения бизнес-целей наших клиентов."
+msgid "about_p1"
 msgstr ""
 "это команда профессионалов, объединенных страстью к веб-разработке и "
-"стремлением к совершенству. Мы начали свой путь в 2010 году как небольшое "
+"стремлением к совершенству. Мы начали свой путь в 2023 году как небольшое "
 "сообщество единомышленников и быстро выросли в полноценную студию, способную "
 "решать самые сложные и нестандартные задачи. За годы работы мы реализовали "
-"более 300 успешных проектов, от небольших стартапов до крупных федеральных "
-"компаний. Наша экспертиза охватывает широкий спектр технологий, включая "
-"Python, Django, React, и глубокое понимание принципов UI/UX дизайна. Мы "
-"гордимся тем, что каждый наш проект — это не просто сайт, а эффективный "
-"инструмент для достижения бизнес-целей наших клиентов."
+"более 100 успешных проектов, от небольших стартапов до крупных компаний. "
+"Наша экспертиза охватывает широкий спектр технологий, включая Python, "
+"Django, React, и глубокое понимание принципов UI/UX дизайна. Мы гордимся "
+"тем, что каждый наш проект — это не просто сайт, а эффективный инструмент "
+"для достижения бизнес-целей наших клиентов."
 
 #: app_home/templates/app_home/includes/about.html:6
-msgid ""
-"Мы верим, что успешный проект — это результат тесного сотрудничества с "
-"клиентом. Поэтому мы всегда остаемся на связи, прислушиваемся к вашим идеям "
-"и предоставляем полную прозрачность на всех этапах разработки. Наша цель — "
-"не просто создать сайт, а стать вашим долгосрочным партнером в мире цифровых "
-"технологий, помогая вашему бизнесу расти и процветать."
+msgid "about_p2"
 msgstr ""
 "Мы верим, что успешный проект — это результат тесного сотрудничества с "
 "клиентом. Поэтому мы всегда остаемся на связи, прислушиваемся к вашим идеям "
@@ -191,9 +169,7 @@ msgid "Индивидуальный подход"
 msgstr "Индивидуальный подход"
 
 #: app_home/templates/app_home/includes/why_us.html:8
-msgid ""
-"Мы глубоко погружаемся в специфику вашего бизнеса, чтобы предложить решения, "
-"идеально соответствующие вашим целям и задачам."
+msgid "why_us_p1"
 msgstr ""
 "Мы глубоко погружаемся в специфику вашего бизнеса, чтобы предложить решения, "
 "идеально соответствующие вашим целям и задачам."
@@ -203,9 +179,7 @@ msgid "Экспертиза и опыт"
 msgstr "Экспертиза и опыт"
 
 #: app_home/templates/app_home/includes/why_us.html:12
-msgid ""
-"Наша команда состоит из высококвалифицированных специалистов с многолетним "
-"опытом в веб-разработке и интернет-маркетинге."
+msgid "why_us_p2"
 msgstr ""
 "Наша команда состоит из высококвалифицированных специалистов с многолетним "
 "опытом в веб-разработке и интернет-маркетинге."
@@ -215,9 +189,7 @@ msgid "Комплексные решения"
 msgstr "Комплексные решения"
 
 #: app_home/templates/app_home/includes/why_us.html:16
-msgid ""
-"Мы предлагаем полный спектр услуг — от проектирования и разработки до "
-"продвижения и поддержки, обеспечивая рост вашего бизнеса 'под ключ'."
+msgid "why_us_p3"
 msgstr ""
 "Мы предлагаем полный спектр услуг — от проектирования и разработки до "
 "продвижения и поддержки, обеспечивая рост вашего бизнеса 'под ключ'."
@@ -227,16 +199,14 @@ msgid "Прозрачность и поддержка"
 msgstr "Прозрачность и поддержка"
 
 #: app_home/templates/app_home/includes/why_us.html:20
-msgid ""
-"Вы всегда будете в курсе хода проекта. Мы предоставляем регулярные отчеты и "
-"оперативную поддержку на всех этапах сотрудничества."
+msgid "why_us_p4"
 msgstr ""
 "Вы всегда будете в курсе хода проекта. Мы предоставляем регулярные отчеты и "
 "оперативную поддержку на всех этапах сотрудничества."
 
 #: app_home/templates/app_home/index.html:4
 msgid "WebCraft Studio - Главная"
-msgstr ""
+msgstr "WebCraft Studio - Главная"
 
 #: app_home/templates/app_home/index.html:9
 msgid "Создаем будущее вашего бизнеса в цифровом мире"
@@ -249,41 +219,30 @@ msgstr "Ваш надежный партнер в разработке и про
 #: app_home/templates/app_home/index.html:22
 #: app_reviews/templates/app_reviews/reviews_page.html:9
 msgid "Отзывы наших клиентов"
-msgstr ""
+msgstr "Отзывы наших клиентов"
 
 #: app_home/templates/app_home/index.html:25
 #: app_reviews/templates/app_reviews/reviews_page.html:15
-#, fuzzy
-#| msgid "Отправить заявку"
 msgid "Оставить отзыв"
-msgstr "Отправить заявку"
+msgstr "Оставить отзыв"
 
 #: app_home/templates/app_home/services_page.html:4
-#, fuzzy
-#| msgid "Наши услуги"
 msgid "Наши услуги - WebCraft Studio"
-msgstr "Наши услуги"
+msgstr "Наши услуги - WebCraft Studio"
 
 #: app_home/templates/app_home/why_us_page.html:4
-#, fuzzy
-#| msgid "Почему мы?"
 msgid "Почему мы? - WebCraft Studio"
-msgstr "Почему мы?"
+msgstr "Почему мы? - WebCraft Studio"
 
 #: app_reviews/templates/app_reviews/includes/reviews.html:7
 #: app_reviews/templates/app_reviews/review_list.html:7
 msgid "Оценка:"
-msgstr ""
+msgstr "Оценка:"
 
 #: app_reviews/templates/app_reviews/reviews_page.html:4
 msgid "Отзывы - WebCraft Studio"
-msgstr ""
+msgstr "Отзывы - WebCraft Studio"
 
 #: app_reviews/templates/app_reviews/reviews_page.html:19
-#, fuzzy
-#| msgid "Отправить заявку"
 msgid "Отправить отзыв"
-msgstr "Отправить заявку"
-
-#~ msgid "WebCraft Studio - Создание и Продвижение Сайтов"
-#~ msgstr "WebCraft Studio - Создание и Продвижение Сайтов"
+msgstr "Отправить отзыв"
