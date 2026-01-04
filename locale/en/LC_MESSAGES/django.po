@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 10:18+0300\n"
-"PO-Revision-Date: 2026-01-04 10:20+0300\n"
+"POT-Creation-Date: 2026-01-04 11:19+0300\n"
+"PO-Revision-Date: 2026-01-04 11:30+0300\n"
 "Last-Translator: Gemini\n"
 "Language-Team: English <en@li.org>\n"
 "Language: en\n"
@@ -25,44 +25,46 @@ msgstr "Russian"
 msgid "English"
 msgstr "English"
 
-#: app_home/templates/app_home/index.html:9
-msgid "WebCraft Studio - Создание и Продвижение Сайтов"
-msgstr "WebCraft Studio - Website Creation and Promotion"
+#: app_home/templates/app_home/about_page.html:4
+msgid "О нас - WebCraft Studio"
+msgstr "About Us - WebCraft Studio"
 
-#: app_home/templates/app_home/index.html:19
-#: app_home/templates/app_home/index.html:55
+#: app_home/templates/app_home/base.html:8
+msgid "WebCraft Studio"
+msgstr "WebCraft Studio"
+
+#: app_home/templates/app_home/base.html:41
+#: app_home/templates/app_home/includes/about.html:4
 msgid "О нас"
 msgstr "About Us"
 
-#: app_home/templates/app_home/index.html:20
+#: app_home/templates/app_home/base.html:42
 msgid "Услуги"
 msgstr "Services"
 
-#: app_home/templates/app_home/index.html:21
+#: app_home/templates/app_home/base.html:43
 msgid "Почему мы?"
 msgstr "Why Us?"
 
-#: app_home/templates/app_home/index.html:22
+#: app_home/templates/app_home/base.html:44
 msgid "Отзывы"
 msgstr "Reviews"
 
-#: app_home/templates/app_home/index.html:23
+#: app_home/templates/app_home/base.html:45
 msgid "Контакты"
 msgstr "Contact"
 
-#: app_home/templates/app_home/index.html:45
-msgid "Создаем будущее вашего бизнеса в цифровом мире"
-msgstr "Creating the future of your business in the digital world"
+#: app_home/templates/app_home/base.html:58
+msgid "Все права защищены."
+msgstr "All rights reserved."
 
-#: app_home/templates/app_home/index.html:46
-msgid "Ваш надежный партнер в разработке и продвижении сайтов"
-msgstr "Your reliable partner in website development and promotion"
+#: app_home/templates/app_home/contact_page.html:4
+#, fuzzy
+#| msgid "Контакты"
+msgid "Контакты - WebCraft Studio"
+msgstr "Contact - WebCraft Studio"
 
-#: app_home/templates/app_home/index.html:47
-msgid "Обсудить проект"
-msgstr "Discuss the project"
-
-#: app_home/templates/app_home/index.html:56
+#: app_home/templates/app_home/includes/about.html:5
 msgid ""
 "это команда профессионалов, объединенных страстью к веб-разработке и "
 "стремлением к совершенству. Мы начали свой путь в 2010 году как небольшое "
@@ -84,7 +86,7 @@ msgstr ""
 "principles. We are proud that each of our projects is not just a website, "
 "but an effective tool for achieving the business goals of our clients."
 
-#: app_home/templates/app_home/index.html:57
+#: app_home/templates/app_home/includes/about.html:6
 msgid ""
 "Мы верим, что успешный проект — это результат тесного сотрудничества с "
 "клиентом. Поэтому мы всегда остаемся на связи, прислушиваемся к вашим идеям "
@@ -98,19 +100,48 @@ msgstr ""
 "to create a website, but to become your long-term partner in the world of "
 "digital technologies, helping your business grow and prosper."
 
-#: app_home/templates/app_home/index.html:63
+#: app_home/templates/app_home/includes/contact.html:4
+msgid "Свяжитесь с нами"
+msgstr "Contact Us"
+
+#: app_home/templates/app_home/includes/contact.html:5
+msgid "Оставьте свои данные, и мы свяжемся с вами в ближайшее время!"
+msgstr "Leave your details and we will contact you shortly!"
+
+#: app_home/templates/app_home/includes/contact.html:9
+msgid "Ваше имя:"
+msgstr "Your name:"
+
+#: app_home/templates/app_home/includes/contact.html:13
+msgid "Номер телефона:"
+msgstr "Phone number:"
+
+#: app_home/templates/app_home/includes/contact.html:17
+msgid "Ваше сообщение:"
+msgstr "Your message:"
+
+#: app_home/templates/app_home/includes/contact.html:20
+msgid "Отправить заявку"
+msgstr "Send request"
+
+#: app_home/templates/app_home/includes/services.html:4
 msgid "Наши услуги"
 msgstr "Our Services"
 
-#: app_home/templates/app_home/index.html:78
+#: app_home/templates/app_home/includes/services.html:15
+#: app_home/templates/app_home/index.html:11
+msgid "Обсудить проект"
+msgstr "Discuss the project"
+
+#: app_home/templates/app_home/includes/why_us.html:4
 msgid "Почему стоит выбрать нас?"
 msgstr "Why Choose Us?"
 
-#: app_home/templates/app_home/index.html:81
+#: app_home/templates/app_home/includes/why_us.html:7
 msgid "Индивидуальный подход"
 msgstr "Individual Approach"
 
-#: app_home/templates/app_home/index.html:82
+#: app_home/templates/app_home/includes/why_us.html:8
 msgid ""
 "Мы глубоко погружаемся в специфику вашего бизнеса, чтобы предложить решения, "
 "идеально соответствующие вашим целям и задачам."
@@ -118,11 +149,11 @@ msgstr ""
 "We delve deep into the specifics of your business to offer solutions that "
 "perfectly match your goals and objectives."
 
-#: app_home/templates/app_home/index.html:85
+#: app_home/templates/app_home/includes/why_us.html:11
 msgid "Экспертиза и опыт"
 msgstr "Expertise and Experience"
 
-#: app_home/templates/app_home/index.html:86
+#: app_home/templates/app_home/includes/why_us.html:12
 msgid ""
 "Наша команда состоит из высококвалифицированных специалистов с многолетним "
 "опытом в веб-разработке и интернет-маркетинге."
@@ -130,11 +161,11 @@ msgstr ""
 "Our team consists of highly qualified specialists with many years of "
 "experience in web development and internet marketing."
 
-#: app_home/templates/app_home/index.html:89
+#: app_home/templates/app_home/includes/why_us.html:15
 msgid "Комплексные решения"
 msgstr "Comprehensive Solutions"
 
-#: app_home/templates/app_home/index.html:90
+#: app_home/templates/app_home/includes/why_us.html:16
 msgid ""
 "Мы предлагаем полный спектр услуг — от проектирования и разработки до "
 "продвижения и поддержки, обеспечивая рост вашего бизнеса 'под ключ'."
@@ -142,11 +173,11 @@ msgstr ""
 "We offer a full range of services — from design and development to promotion "
 "and support, ensuring the growth of your business 'turnkey'."
 
-#: app_home/templates/app_home/index.html:93
+#: app_home/templates/app_home/includes/why_us.html:19
 msgid "Прозрачность и поддержка"
 msgstr "Transparency and Support"
 
-#: app_home/templates/app_home/index.html:94
+#: app_home/templates/app_home/includes/why_us.html:20
 msgid ""
 "Вы всегда будете в курсе хода проекта. Мы предоставляем регулярные отчеты и "
 "оперативную поддержку на всех этапах сотрудничества."
@@ -154,38 +185,49 @@ msgstr ""
 "You will always be aware of the progress of the project. We provide regular "
 "reports and operational support at all stages of cooperation."
 
-#: app_home/templates/app_home/index.html:102
+#: app_home/templates/app_home/index.html:4
+msgid "WebCraft Studio - Главная"
+msgstr "WebCraft Studio - Home"
+
+#: app_home/templates/app_home/index.html:9
+msgid "Создаем будущее вашего бизнеса в цифровом мире"
+msgstr "Creating the future of your business in the digital world"
+
+#: app_home/templates/app_home/index.html:10
+msgid "Ваш надежный партнер в разработке и продвижении сайтов"
+msgstr "Your reliable partner in website development and promotion"
+
+#: app_home/templates/app_home/index.html:22
+#: app_reviews/templates/app_reviews/reviews_page.html:9
 msgid "Отзывы наших клиентов"
 msgstr "Our Clients' Reviews"
 
-#: app_home/templates/app_home/index.html:109
-msgid "Свяжитесь с нами"
-msgstr "Contact Us"
+#: app_home/templates/app_home/index.html:25
+msgid "Оставить отзыв"
+msgstr "Leave a review"
 
-#: app_home/templates/app_home/index.html:110
-msgid "Оставьте свои данные, и мы свяжемся с вами в ближайшее время!"
-msgstr "Leave your details and we will contact you shortly!"
+#: app_home/templates/app_home/services_page.html:4
+#, fuzzy
+#| msgid "Наши услуги"
+msgid "Наши услуги - WebCraft Studio"
+msgstr "Our Services - WebCraft Studio"
 
-#: app_home/templates/app_home/index.html:114
-msgid "Ваше имя:"
-msgstr "Your name:"
+#: app_home/templates/app_home/why_us_page.html:4
+#, fuzzy
+#| msgid "Почему мы?"
+msgid "Почему мы? - WebCraft Studio"
+msgstr "Why Us? - WebCraft Studio"
 
-#: app_home/templates/app_home/index.html:118
-msgid "Номер телефона:"
-msgstr "Phone number:"
-
-#: app_home/templates/app_home/index.html:122
-msgid "Ваше сообщение:"
-msgstr "Your message:"
-
-#: app_home/templates/app_home/index.html:125
-msgid "Отправить заявку"
-msgstr "Send request"
-
-#: app_home/templates/app_home/index.html:142
-msgid "Все права защищены."
-msgstr "All rights reserved."
-
-#: app_reviews/templates/app_reviews/review_list.html:7
+#: app_reviews/templates/app_reviews/includes/reviews.html:7
 msgid "Оценка:"
 msgstr "Rating:"
+
+#: app_reviews/templates/app_reviews/reviews_page.html:4
+msgid "Отзывы - WebCraft Studio"
+msgstr "Reviews - WebCraft Studio"
+
+#: app_reviews/templates/app_reviews/reviews_page.html:19
+#, fuzzy
+#| msgid "Отправить заявку"
+msgid "Отправить отзыв"
+msgstr "Send review"

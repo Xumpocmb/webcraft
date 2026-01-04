@@ -39,17 +39,17 @@
                 </div>
                 <ul class="nav-links">
                     <li><a href="{% url 'about_page' %}">{% trans "О нас" %}</a></li>
-                    <li><a href="{% url 'services_page' %}">{% trans "Услуги" %}</a></li>
+                    <li><a href="{% url 'services_page' %}">{% trans "Услуги" %}</a></a></li>
                     <li><a href="{% url 'why_us_page' %}">{% trans "Почему мы?" %}</a></li>
                     <li><a href="{% url 'app_reviews:reviews_page' %}">{% trans "Отзывы" %}</a></li>
                     <li><a href="{% url 'contact_page' %}">{% trans "Контакты" %}</a></li>
                 </ul>
             </div>
         </nav>
-        {% block hero %}{% endblock %}
     </header>
 
     <main>
+        {% block hero %}{% endblock %}
         {% block content %}{% endblock %}
     </main>
 

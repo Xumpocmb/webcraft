@@ -21,6 +21,9 @@
         <div class="container">
             <h2>{% trans "Отзывы наших клиентов" %}</h2>
             {% include 'app_reviews/includes/reviews.html' %}
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="{% url 'app_reviews:reviews_page' %}" class="btn btn-primary">{% trans "Оставить отзыв" %}</a>
+            </div>
         </div>
     </section>
     {% include 'app_home/includes/contact.html' %}

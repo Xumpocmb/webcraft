@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 10:18+0300\n"
+"POT-Creation-Date: 2026-01-04 11:19+0300\n"
 "PO-Revision-Date: 2026-01-04 09:30+0300\n"
 "Last-Translator: Gemini\n"
 "Language-Team: Russian <ru@li.org>\n"
@@ -27,167 +27,216 @@ msgstr "Русский"
 msgid "English"
 msgstr "Английский"
 
-#: app_home/templates/app_home/index.html:9
-msgid "WebCraft Studio - Создание и Продвижение Сайтов"
-msgstr "WebCraft Studio - Создание и Продвижение Сайтов"
+#: app_home/templates/app_home/about_page.html:4
+msgid "О нас - WebCraft Studio"
+msgstr ""
 
-#: app_home/templates/app_home/index.html:19
-#: app_home/templates/app_home/index.html:55
+#: app_home/templates/app_home/base.html:8
+msgid "WebCraft Studio"
+msgstr ""
+
+#: app_home/templates/app_home/base.html:41
+#: app_home/templates/app_home/includes/about.html:4
 msgid "О нас"
 msgstr "О нас"
 
-#: app_home/templates/app_home/index.html:20
+#: app_home/templates/app_home/base.html:42
 msgid "Услуги"
 msgstr "Услуги"
 
-#: app_home/templates/app_home/index.html:21
+#: app_home/templates/app_home/base.html:43
 msgid "Почему мы?"
 msgstr "Почему мы?"
 
-#: app_home/templates/app_home/index.html:22
+#: app_home/templates/app_home/base.html:44
 msgid "Отзывы"
 msgstr ""
 
-#: app_home/templates/app_home/index.html:23
+#: app_home/templates/app_home/base.html:45
 msgid "Контакты"
 msgstr "Контакты"
 
-#: app_home/templates/app_home/index.html:45
-msgid "Создаем будущее вашего бизнеса в цифровом мире"
-msgstr "Создаем будущее вашего бизнеса в цифровом мире"
-
-#: app_home/templates/app_home/index.html:46
-msgid "Ваш надежный партнер в разработке и продвижении сайтов"
-msgstr "Ваш надежный партнер в разработке и продвижении сайтов"
-
-#: app_home/templates/app_home/index.html:47
-msgid "Обсудить проект"
-msgstr "Обсудить проект"
-
-#: app_home/templates/app_home/index.html:56
-msgid ""
-"это команда профессионалов, объединенных страстью к веб-разработке и "
-"стремлением к совершенству. Мы начали свой путь в 2010 году как небольшое "
-"сообщество единомышленников и быстро выросли в полноценную студию, способную "
-"решать самые сложные и нестандартные задачи. За годы работы мы реализовали "
-"более 300 успешных проектов, от небольших стартапов до крупных федеральных "
-"компаний. Наша экспертиза охватывает широкий спектр технологий, включая "
-"Python, Django, React, и глубокое понимание принципов UI/UX дизайна. Мы "
-"гордимся тем, что каждый наш проект — это не просто сайт, а эффективный "
-"инструмент для достижения бизнес-целей наших клиентов."
-msgstr ""
-"это команда профессионалов, объединенных страстью к веб-разработке и "
-"стремлением к совершенству. Мы начали свой путь в 2010 году как небольшое "
-"сообщество единомышленников и быстро выросли в полноценную студию, способную "
-"решать самые сложные и нестандартные задачи. За годы работы мы реализовали "
-"более 300 успешных проектов, от небольших стартапов до крупных федеральных "
-"компаний. Наша экспертиза охватывает широкий спектр технологий, включая "
-"Python, Django, React, и глубокое понимание принципов UI/UX дизайна. Мы "
-"гордимся тем, что каждый наш проект — это не просто сайт, а эффективный "
-"инструмент для достижения бизнес-целей наших клиентов."
-
-#: app_home/templates/app_home/index.html:57
-msgid ""
-"Мы верим, что успешный проект — это результат тесного сотрудничества с "
-"клиентом. Поэтому мы всегда остаемся на связи, прислушиваемся к вашим идеям "
-"и предоставляем полную прозрачность на всех этапах разработки. Наша цель — "
-"не просто создать сайт, а стать вашим долгосрочным партнером в мире цифровых "
-"технологий, помогая вашему бизнесу расти и процветать."
-msgstr ""
-"Мы верим, что успешный проект — это результат тесного сотрудничества с "
-"клиентом. Поэтому мы всегда остаемся на связи, прислушиваемся к вашим идеям "
-"и предоставляем полную прозрачность на всех этапах разработки. Наша цель — "
-"не просто создать сайт, а стать вашим долгосрочным партнером в мире цифровых "
-"технологий, помогая вашему бизнесу расти и процветать."
-
-#: app_home/templates/app_home/index.html:63
-msgid "Наши услуги"
-msgstr "Наши услуги"
-
-#: app_home/templates/app_home/index.html:78
-msgid "Почему стоит выбрать нас?"
-msgstr "Почему стоит выбрать нас?"
-
-#: app_home/templates/app_home/index.html:81
-msgid "Индивидуальный подход"
-msgstr "Индивидуальный подход"
-
-#: app_home/templates/app_home/index.html:82
-msgid ""
-"Мы глубоко погружаемся в специфику вашего бизнеса, чтобы предложить решения, "
-"идеально соответствующие вашим целям и задачам."
-msgstr ""
-"Мы глубоко погружаемся в специфику вашего бизнеса, чтобы предложить решения, "
-"идеально соответствующие вашим целям и задачам."
-
-#: app_home/templates/app_home/index.html:85
-msgid "Экспертиза и опыт"
-msgstr "Экспертиза и опыт"
-
-#: app_home/templates/app_home/index.html:86
-msgid ""
-"Наша команда состоит из высококвалифицированных специалистов с многолетним "
-"опытом в веб-разработке и интернет-маркетинге."
-msgstr ""
-"Наша команда состоит из высококвалифицированных специалистов с многолетним "
-"опытом в веб-разработке и интернет-маркетинге."
-
-#: app_home/templates/app_home/index.html:89
-msgid "Комплексные решения"
-msgstr "Комплексные решения"
-
-#: app_home/templates/app_home/index.html:90
-msgid ""
-"Мы предлагаем полный спектр услуг — от проектирования и разработки до "
-"продвижения и поддержки, обеспечивая рост вашего бизнеса 'под ключ'."
-msgstr ""
-"Мы предлагаем полный спектр услуг — от проектирования и разработки до "
-"продвижения и поддержки, обеспечивая рост вашего бизнеса 'под ключ'."
-
-#: app_home/templates/app_home/index.html:93
-msgid "Прозрачность и поддержка"
-msgstr "Прозрачность и поддержка"
-
-#: app_home/templates/app_home/index.html:94
-msgid ""
-"Вы всегда будете в курсе хода проекта. Мы предоставляем регулярные отчеты и "
-"оперативную поддержку на всех этапах сотрудничества."
-msgstr ""
-"Вы всегда будете в курсе хода проекта. Мы предоставляем регулярные отчеты и "
-"оперативную поддержку на всех этапах сотрудничества."
-
-#: app_home/templates/app_home/index.html:102
-msgid "Отзывы наших клиентов"
-msgstr ""
-
-#: app_home/templates/app_home/index.html:109
-msgid "Свяжитесь с нами"
-msgstr "Свяжитесь с нами"
-
-#: app_home/templates/app_home/index.html:110
-msgid "Оставьте свои данные, и мы свяжемся с вами в ближайшее время!"
-msgstr "Оставьте свои данные, и мы свяжемся с вами в ближайшее время!"
-
-#: app_home/templates/app_home/index.html:114
-msgid "Ваше имя:"
-msgstr "Ваше имя:"
-
-#: app_home/templates/app_home/index.html:118
-msgid "Номер телефона:"
-msgstr "Номер телефона:"
-
-#: app_home/templates/app_home/index.html:122
-msgid "Ваше сообщение:"
-msgstr "Ваше сообщение:"
-
-#: app_home/templates/app_home/index.html:125
-msgid "Отправить заявку"
-msgstr "Отправить заявку"
-
-#: app_home/templates/app_home/index.html:142
+#: app_home/templates/app_home/base.html:58
 msgid "Все права защищены."
 msgstr "Все права защищены."
 
+#: app_home/templates/app_home/contact_page.html:4
+#, fuzzy
+#| msgid "Контакты"
+msgid "Контакты - WebCraft Studio"
+msgstr "Контакты"
+
+#: app_home/templates/app_home/includes/about.html:5
+msgid ""
+"это команда профессионалов, объединенных страстью к веб-разработке и "
+"стремлением к совершенству. Мы начали свой путь в 2010 году как небольшое "
+"сообщество единомышленников и быстро выросли в полноценную студию, способную "
+"решать самые сложные и нестандартные задачи. За годы работы мы реализовали "
+"более 300 успешных проектов, от небольших стартапов до крупных федеральных "
+"компаний. Наша экспертиза охватывает широкий спектр технологий, включая "
+"Python, Django, React, и глубокое понимание принципов UI/UX дизайна. Мы "
+"гордимся тем, что каждый наш проект — это не просто сайт, а эффективный "
+"инструмент для достижения бизнес-целей наших клиентов."
+msgstr ""
+"это команда профессионалов, объединенных страстью к веб-разработке и "
+"стремлением к совершенству. Мы начали свой путь в 2010 году как небольшое "
+"сообщество единомышленников и быстро выросли в полноценную студию, способную "
+"решать самые сложные и нестандартные задачи. За годы работы мы реализовали "
+"более 300 успешных проектов, от небольших стартапов до крупных федеральных "
+"компаний. Наша экспертиза охватывает широкий спектр технологий, включая "
+"Python, Django, React, и глубокое понимание принципов UI/UX дизайна. Мы "
+"гордимся тем, что каждый наш проект — это не просто сайт, а эффективный "
+"инструмент для достижения бизнес-целей наших клиентов."
+
+#: app_home/templates/app_home/includes/about.html:6
+msgid ""
+"Мы верим, что успешный проект — это результат тесного сотрудничества с "
+"клиентом. Поэтому мы всегда остаемся на связи, прислушиваемся к вашим идеям "
+"и предоставляем полную прозрачность на всех этапах разработки. Наша цель — "
+"не просто создать сайт, а стать вашим долгосрочным партнером в мире цифровых "
+"технологий, помогая вашему бизнесу расти и процветать."
+msgstr ""
+"Мы верим, что успешный проект — это результат тесного сотрудничества с "
+"клиентом. Поэтому мы всегда остаемся на связи, прислушиваемся к вашим идеям "
+"и предоставляем полную прозрачность на всех этапах разработки. Наша цель — "
+"не просто создать сайт, а стать вашим долгосрочным партнером в мире цифровых "
+"технологий, помогая вашему бизнесу расти и процветать."
+
+#: app_home/templates/app_home/includes/contact.html:4
+msgid "Свяжитесь с нами"
+msgstr "Свяжитесь с нами"
+
+#: app_home/templates/app_home/includes/contact.html:5
+msgid "Оставьте свои данные, и мы свяжемся с вами в ближайшее время!"
+msgstr "Оставьте свои данные, и мы свяжемся с вами в ближайшее время!"
+
+#: app_home/templates/app_home/includes/contact.html:9
+msgid "Ваше имя:"
+msgstr "Ваше имя:"
+
+#: app_home/templates/app_home/includes/contact.html:13
+msgid "Номер телефона:"
+msgstr "Номер телефона:"
+
+#: app_home/templates/app_home/includes/contact.html:17
+msgid "Ваше сообщение:"
+msgstr "Ваше сообщение:"
+
+#: app_home/templates/app_home/includes/contact.html:20
+msgid "Отправить заявку"
+msgstr "Отправить заявку"
+
+#: app_home/templates/app_home/includes/services.html:4
+msgid "Наши услуги"
+msgstr "Наши услуги"
+
+#: app_home/templates/app_home/includes/services.html:15
+#: app_home/templates/app_home/index.html:11
+msgid "Обсудить проект"
+msgstr "Обсудить проект"
+
+#: app_home/templates/app_home/includes/why_us.html:4
+msgid "Почему стоит выбрать нас?"
+msgstr "Почему стоит выбрать нас?"
+
+#: app_home/templates/app_home/includes/why_us.html:7
+msgid "Индивидуальный подход"
+msgstr "Индивидуальный подход"
+
+#: app_home/templates/app_home/includes/why_us.html:8
+msgid ""
+"Мы глубоко погружаемся в специфику вашего бизнеса, чтобы предложить решения, "
+"идеально соответствующие вашим целям и задачам."
+msgstr ""
+"Мы глубоко погружаемся в специфику вашего бизнеса, чтобы предложить решения, "
+"идеально соответствующие вашим целям и задачам."
+
+#: app_home/templates/app_home/includes/why_us.html:11
+msgid "Экспертиза и опыт"
+msgstr "Экспертиза и опыт"
+
+#: app_home/templates/app_home/includes/why_us.html:12
+msgid ""
+"Наша команда состоит из высококвалифицированных специалистов с многолетним "
+"опытом в веб-разработке и интернет-маркетинге."
+msgstr ""
+"Наша команда состоит из высококвалифицированных специалистов с многолетним "
+"опытом в веб-разработке и интернет-маркетинге."
+
+#: app_home/templates/app_home/includes/why_us.html:15
+msgid "Комплексные решения"
+msgstr "Комплексные решения"
+
+#: app_home/templates/app_home/includes/why_us.html:16
+msgid ""
+"Мы предлагаем полный спектр услуг — от проектирования и разработки до "
+"продвижения и поддержки, обеспечивая рост вашего бизнеса 'под ключ'."
+msgstr ""
+"Мы предлагаем полный спектр услуг — от проектирования и разработки до "
+"продвижения и поддержки, обеспечивая рост вашего бизнеса 'под ключ'."
+
+#: app_home/templates/app_home/includes/why_us.html:19
+msgid "Прозрачность и поддержка"
+msgstr "Прозрачность и поддержка"
+
+#: app_home/templates/app_home/includes/why_us.html:20
+msgid ""
+"Вы всегда будете в курсе хода проекта. Мы предоставляем регулярные отчеты и "
+"оперативную поддержку на всех этапах сотрудничества."
+msgstr ""
+"Вы всегда будете в курсе хода проекта. Мы предоставляем регулярные отчеты и "
+"оперативную поддержку на всех этапах сотрудничества."
+
+#: app_home/templates/app_home/index.html:4
+msgid "WebCraft Studio - Главная"
+msgstr ""
+
+#: app_home/templates/app_home/index.html:9
+msgid "Создаем будущее вашего бизнеса в цифровом мире"
+msgstr "Создаем будущее вашего бизнеса в цифровом мире"
+
+#: app_home/templates/app_home/index.html:10
+msgid "Ваш надежный партнер в разработке и продвижении сайтов"
+msgstr "Ваш надежный партнер в разработке и продвижении сайтов"
+
+#: app_home/templates/app_home/index.html:22
+#: app_reviews/templates/app_reviews/reviews_page.html:9
+msgid "Отзывы наших клиентов"
+msgstr ""
+
+#: app_home/templates/app_home/index.html:25
+#: app_reviews/templates/app_reviews/reviews_page.html:15
+#, fuzzy
+#| msgid "Отправить заявку"
+msgid "Оставить отзыв"
+msgstr "Отправить заявку"
+
+#: app_home/templates/app_home/services_page.html:4
+#, fuzzy
+#| msgid "Наши услуги"
+msgid "Наши услуги - WebCraft Studio"
+msgstr "Наши услуги"
+
+#: app_home/templates/app_home/why_us_page.html:4
+#, fuzzy
+#| msgid "Почему мы?"
+msgid "Почему мы? - WebCraft Studio"
+msgstr "Почему мы?"
+
+#: app_reviews/templates/app_reviews/includes/reviews.html:7
 #: app_reviews/templates/app_reviews/review_list.html:7
 msgid "Оценка:"
 msgstr ""
+
+#: app_reviews/templates/app_reviews/reviews_page.html:4
+msgid "Отзывы - WebCraft Studio"
+msgstr ""
+
+#: app_reviews/templates/app_reviews/reviews_page.html:19
+#, fuzzy
+#| msgid "Отправить заявку"
+msgid "Отправить отзыв"
+msgstr "Отправить заявку"
+
+#~ msgid "WebCraft Studio - Создание и Продвижение Сайтов"
+#~ msgstr "WebCraft Studio - Создание и Продвижение Сайтов"
