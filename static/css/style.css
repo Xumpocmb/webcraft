@@ -79,6 +79,34 @@ nav ul li a {
     font-size: 1.1em;
 }
 
+.language-switcher {
+    margin-left: 25px;
+}
+
+.language-switcher select {
+    background-color: #333;
+    color: #f0f0f0;
+    border: 1px solid #555;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    appearance: none; /* Remove default browser styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20fill%3D%22%2361dafb%22%20d%3D%22M128%20188.3L36.7%2097l11.3-11.3L128%20165.7l80-80%2011.3%2011.3L128%20188.3z%22%2F%3E%3C%2Fsvg%3E'); /* Custom arrow */
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+    padding-right: 30px; /* Make space for the arrow */
+}
+
+.language-switcher select:focus {
+    outline: none;
+    border-color: #61dafb;
+    box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.3);
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/static/images/hero-bg.jpg') no-repeat center center/cover; /* Placeholder background */
