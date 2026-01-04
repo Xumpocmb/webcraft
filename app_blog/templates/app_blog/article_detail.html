@@ -3,6 +3,9 @@
 
 {% block title %}{{ article.title }} - {% trans "Блог" %}{% endblock %}
 
+{% block meta_description %}{{ article.content|striptags|truncatewords:20 }}{% endblock %}
+{% block meta_keywords %}{{ article.title }}, {% trans "блог" %}, WebCraft Studio{% endblock %}
+
 {% block content %}
 <section id="article-detail" class="article-detail-section">
     <div class="container">

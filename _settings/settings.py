@@ -42,10 +42,15 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'modeltranslation',
     'django.contrib.admin',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
+    'robots',
     'app_home',
     'app_reviews',
     'app_blog',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
