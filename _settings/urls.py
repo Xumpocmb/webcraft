@@ -25,4 +25,5 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     path('', include('app_home.urls')),
+    path('reviews/', include('app_reviews.urls')),
 )

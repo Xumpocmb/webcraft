@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'modeltranslation',
     'django.contrib.admin',
     'app_home',
+    'app_reviews',
 ]
 
 MIDDLEWARE = [

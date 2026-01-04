@@ -1,0 +1,31 @@
+{% load i18n %}
+<div class="reviews-carousel">
+    {% for review in reviews %}
+    <div class="review-card">
+        <div class="review-header">
+            <span class="review-author">{{ review.author }}</span>
+            <span class="review-rating">{% trans "Оценка:" %} {{ review.rating }}/5</span>
+        </div>
+        <div class="review-body">
+            <p>{{ review.comment }}</p>
+        </div>
+        <div class="review-footer">
+            <a href="{% url 'app_reviews:like_review' review.id %}" class="like-btn">👍 ({{ review.likes }})</a>
+            <span class="review-date">{{ review.created_at|date:"d.m.Y" }}</span>
+        </div>
+        <div class="replies">
+            {% for reply in review.replies.all %}
+            <div class="reply-card">
+                <div class="reply-header">
+                    <span class="reply-author">{{ reply.author.username }}</span>
+                    <span class="reply-date">{{ reply.created_at|date:"d.m.Y" }}</span>
+                </div>
+                <div class="reply-body">
+                    <p>{{ reply.comment }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>

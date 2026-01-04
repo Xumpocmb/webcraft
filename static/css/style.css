@@ -274,6 +274,126 @@ footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Reviews Section */
+.reviews-section {
+    background-color: #1a1a1a;
+}
+
+.reviews-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px; /* For scrollbar visibility */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #61dafb #282c34; /* Firefox */
+}
+
+/* Webkit scrollbar (Chrome, Safari) */
+.reviews-carousel::-webkit-scrollbar {
+    height: 10px;
+}
+
+.reviews-carousel::-webkit-scrollbar-track {
+    background: #282c34;
+    border-radius: 10px;
+}
+
+.reviews-carousel::-webkit-scrollbar-thumb {
+    background: #61dafb;
+    border-radius: 10px;
+}
+
+.review-card {
+    flex: 0 0 350px; /* Fixed width for horizontal cards */
+    background-color: #282c34;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.review-author {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #61dafb;
+}
+
+.review-rating {
+    font-weight: 700;
+    color: #ffc107; /* Star color */
+}
+
+.review-body p {
+    color: #ccc;
+    font-size: 1.05em;
+    line-height: 1.7;
+    flex-grow: 1; /* Allow comment to take available space */
+}
+
+.review-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.like-btn {
+    font-size: 1.1em;
+    color: #e91e63; /* Pink for likes */
+}
+
+.replies {
+    margin-top: 20px;
+    margin-left: 0; /* Remove left margin for horizontal layout */
+    border-left: none; /* Remove left border */
+    padding-left: 0;
+}
+
+.reply-card {
+    background-color: #333a45;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.reply-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.reply-author {
+    font-weight: 600;
+    color: #f0f0f0;
+}
+
+.reply-date {
+    color: #aaa;
+}
+
+.reply-body p {
+    color: #ddd;
+    font-size: 1em;
+    margin: 0;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav .container {

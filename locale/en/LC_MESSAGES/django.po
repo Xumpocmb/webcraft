@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 09:25+0300\n"
-"PO-Revision-Date: 2026-01-04 09:35+0300\n"
+"POT-Creation-Date: 2026-01-04 10:18+0300\n"
+"PO-Revision-Date: 2026-01-04 10:20+0300\n"
 "Last-Translator: Gemini\n"
 "Language-Team: English <en@li.org>\n"
 "Language: en\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: _settings/settings.py:114
+#: _settings/settings.py:116
 msgid "Russian"
 msgstr "Russian"
 
-#: _settings/settings.py:115
+#: _settings/settings.py:117
 msgid "English"
 msgstr "English"
 
@@ -30,7 +30,7 @@ msgid "WebCraft Studio - Создание и Продвижение Сайтов
 msgstr "WebCraft Studio - Website Creation and Promotion"
 
 #: app_home/templates/app_home/index.html:19
-#: app_home/templates/app_home/index.html:54
+#: app_home/templates/app_home/index.html:55
 msgid "О нас"
 msgstr "About Us"
 
@@ -43,22 +43,26 @@ msgid "Почему мы?"
 msgstr "Why Us?"
 
 #: app_home/templates/app_home/index.html:22
+msgid "Отзывы"
+msgstr "Reviews"
+
+#: app_home/templates/app_home/index.html:23
 msgid "Контакты"
 msgstr "Contact"
 
-#: app_home/templates/app_home/index.html:44
+#: app_home/templates/app_home/index.html:45
 msgid "Создаем будущее вашего бизнеса в цифровом мире"
 msgstr "Creating the future of your business in the digital world"
 
-#: app_home/templates/app_home/index.html:45
+#: app_home/templates/app_home/index.html:46
 msgid "Ваш надежный партнер в разработке и продвижении сайтов"
 msgstr "Your reliable partner in website development and promotion"
 
-#: app_home/templates/app_home/index.html:46
+#: app_home/templates/app_home/index.html:47
 msgid "Обсудить проект"
 msgstr "Discuss the project"
 
-#: app_home/templates/app_home/index.html:55
+#: app_home/templates/app_home/index.html:56
 msgid ""
 "это команда профессионалов, объединенных страстью к веб-разработке и "
 "стремлением к совершенству. Мы начали свой путь в 2010 году как небольшое "
@@ -70,18 +74,17 @@ msgid ""
 "гордимся тем, что каждый наш проект — это не просто сайт, а эффективный "
 "инструмент для достижения бизнес-целей наших клиентов."
 msgstr ""
-"is a team of professionals united by a passion for web development and "
-"a commitment to excellence. We began our journey in 2010 as a small "
-"community of like-minded people and quickly grew into a full-fledged studio "
-"capable of solving the most complex and non-standard tasks. Over the years, "
-"we have implemented more than 300 successful projects, from small startups "
-"to large federal companies. Our expertise covers a wide range of "
-"technologies, including Python, Django, React, and a deep understanding of "
-"UI/UX design principles. We are proud that each of our projects is not just "
-"a website, but an effective tool for achieving the business goals of our "
-"clients."
+"is a team of professionals united by a passion for web development and a "
+"commitment to excellence. We began our journey in 2010 as a small community "
+"of like-minded people and quickly grew into a full-fledged studio capable of "
+"solving the most complex and non-standard tasks. Over the years, we have "
+"implemented more than 300 successful projects, from small startups to large "
+"federal companies. Our expertise covers a wide range of technologies, "
+"including Python, Django, React, and a deep understanding of UI/UX design "
+"principles. We are proud that each of our projects is not just a website, "
+"but an effective tool for achieving the business goals of our clients."
 
-#: app_home/templates/app_home/index.html:56
+#: app_home/templates/app_home/index.html:57
 msgid ""
 "Мы верим, что успешный проект — это результат тесного сотрудничества с "
 "клиентом. Поэтому мы всегда остаемся на связи, прислушиваемся к вашим идеям "
@@ -91,23 +94,23 @@ msgid ""
 msgstr ""
 "We believe that a successful project is the result of close cooperation with "
 "the client. Therefore, we always stay in touch, listen to your ideas and "
-"provide full transparency at all stages of development. Our goal is not "
-"just to create a website, but to become your long-term partner in the world "
-"of digital technologies, helping your business grow and prosper."
+"provide full transparency at all stages of development. Our goal is not just "
+"to create a website, but to become your long-term partner in the world of "
+"digital technologies, helping your business grow and prosper."
 
-#: app_home/templates/app_home/index.html:62
+#: app_home/templates/app_home/index.html:63
 msgid "Наши услуги"
 msgstr "Our Services"
 
-#: app_home/templates/app_home/index.html:77
+#: app_home/templates/app_home/index.html:78
 msgid "Почему стоит выбрать нас?"
 msgstr "Why Choose Us?"
 
-#: app_home/templates/app_home/index.html:80
+#: app_home/templates/app_home/index.html:81
 msgid "Индивидуальный подход"
 msgstr "Individual Approach"
 
-#: app_home/templates/app_home/index.html:81
+#: app_home/templates/app_home/index.html:82
 msgid ""
 "Мы глубоко погружаемся в специфику вашего бизнеса, чтобы предложить решения, "
 "идеально соответствующие вашим целям и задачам."
@@ -115,11 +118,11 @@ msgstr ""
 "We delve deep into the specifics of your business to offer solutions that "
 "perfectly match your goals and objectives."
 
-#: app_home/templates/app_home/index.html:84
+#: app_home/templates/app_home/index.html:85
 msgid "Экспертиза и опыт"
 msgstr "Expertise and Experience"
 
-#: app_home/templates/app_home/index.html:85
+#: app_home/templates/app_home/index.html:86
 msgid ""
 "Наша команда состоит из высококвалифицированных специалистов с многолетним "
 "опытом в веб-разработке и интернет-маркетинге."
@@ -127,11 +130,11 @@ msgstr ""
 "Our team consists of highly qualified specialists with many years of "
 "experience in web development and internet marketing."
 
-#: app_home/templates/app_home/index.html:88
+#: app_home/templates/app_home/index.html:89
 msgid "Комплексные решения"
 msgstr "Comprehensive Solutions"
 
-#: app_home/templates/app_home/index.html:89
+#: app_home/templates/app_home/index.html:90
 msgid ""
 "Мы предлагаем полный спектр услуг — от проектирования и разработки до "
 "продвижения и поддержки, обеспечивая рост вашего бизнеса 'под ключ'."
@@ -139,11 +142,11 @@ msgstr ""
 "We offer a full range of services — from design and development to promotion "
 "and support, ensuring the growth of your business 'turnkey'."
 
-#: app_home/templates/app_home/index.html:92
+#: app_home/templates/app_home/index.html:93
 msgid "Прозрачность и поддержка"
 msgstr "Transparency and Support"
 
-#: app_home/templates/app_home/index.html:93
+#: app_home/templates/app_home/index.html:94
 msgid ""
 "Вы всегда будете в курсе хода проекта. Мы предоставляем регулярные отчеты и "
 "оперативную поддержку на всех этапах сотрудничества."
@@ -151,30 +154,38 @@ msgstr ""
 "You will always be aware of the progress of the project. We provide regular "
 "reports and operational support at all stages of cooperation."
 
-#: app_home/templates/app_home/index.html:101
+#: app_home/templates/app_home/index.html:102
+msgid "Отзывы наших клиентов"
+msgstr "Our Clients' Reviews"
+
+#: app_home/templates/app_home/index.html:109
 msgid "Свяжитесь с нами"
 msgstr "Contact Us"
 
-#: app_home/templates/app_home/index.html:102
+#: app_home/templates/app_home/index.html:110
 msgid "Оставьте свои данные, и мы свяжемся с вами в ближайшее время!"
 msgstr "Leave your details and we will contact you shortly!"
 
-#: app_home/templates/app_home/index.html:106
+#: app_home/templates/app_home/index.html:114
 msgid "Ваше имя:"
 msgstr "Your name:"
 
-#: app_home/templates/app_home/index.html:110
+#: app_home/templates/app_home/index.html:118
 msgid "Номер телефона:"
 msgstr "Phone number:"
 
-#: app_home/templates/app_home/index.html:114
+#: app_home/templates/app_home/index.html:122
 msgid "Ваше сообщение:"
 msgstr "Your message:"
 
-#: app_home/templates/app_home/index.html:117
+#: app_home/templates/app_home/index.html:125
 msgid "Отправить заявку"
 msgstr "Send request"
 
-#: app_home/templates/app_home/index.html:134
+#: app_home/templates/app_home/index.html:142
 msgid "Все права защищены."
 msgstr "All rights reserved."
+
+#: app_reviews/templates/app_reviews/review_list.html:7
+msgid "Оценка:"
+msgstr "Rating:"

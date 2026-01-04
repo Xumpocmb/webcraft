@@ -6,6 +6,7 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib import messages
 from .models import Service, ContactRequest
+from app_reviews.models import Review
 
 logger = logging.getLogger(__name__)
 
@@ -60,7 +61,9 @@ def index(request):
             return JsonResponse({'status': 'warning', 'message': 'Telegram configuration is incomplete. Request saved, but not sent to Telegram.'})
 
     services = Service.objects.all().order_by('id')
+    reviews = Review.objects.all()
     context = {
-        'services': services
+        'services': services,
+        'reviews': reviews,
     }
     return render(request, 'app_home/index.html', context)

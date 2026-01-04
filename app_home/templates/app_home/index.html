@@ -19,6 +19,7 @@
                     <li><a href="#about">{% trans "О нас" %}</a></li>
                     <li><a href="#services">{% trans "Услуги" %}</a></li>
                     <li><a href="#why-us">{% trans "Почему мы?" %}</a></li>
+                    <li><a href="#reviews">{% trans "Отзывы" %}</a></li>
                     <li><a href="#contact">{% trans "Контакты" %}</a></li>
                 </ul>
                 <div class="language-switcher">
@@ -93,6 +94,13 @@
                         <p>{% trans "Вы всегда будете в курсе хода проекта. Мы предоставляем регулярные отчеты и оперативную поддержку на всех этапах сотрудничества." %}</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews-section">
+            <div class="container">
+                <h2>{% trans "Отзывы наших клиентов" %}</h2>
+                {% include 'app_reviews/review_list.html' %}
             </div>
         </section>
 
