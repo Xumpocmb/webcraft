@@ -6,6 +6,38 @@
 {% block meta_description %}{{ article.content|striptags|truncatewords:20 }}{% endblock %}
 {% block meta_keywords %}{{ article.title }}, {% trans "блог" %}, WebCraft Studio{% endblock %}
 
+{% block og_title %}{{ article.title }}{% endblock %}
+{% block og_description %}{{ article.content|striptags|truncatewords:20 }}{% endblock %}
+{% block twitter_title %}{{ article.title }}{% endblock %}
+{% block twitter_description %}{{ article.content|striptags|truncatewords:20 }}{% endblock %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ request.build_absolute_uri }}"
+  },
+  "headline": "{{ article.title }}",
+  "description": "{{ article.content|striptags|truncatewords:30 }}",
+  "image": "https://www.webcraft.studio/static/images/hero-bg.jpg",  
+  "author": {
+    "@type": "Organization",
+    "name": "WebCraft Studio"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "WebCraft Studio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.webcraft.studio/static/images/logo.png"
+    }
+  },
+  "datePublished": "{{ article.created_at|date:'Y-m-d' }}"
+}
+</script>
+
 {% block content %}
 <section id="article-detail" class="article-detail-section">
     <div class="container">
