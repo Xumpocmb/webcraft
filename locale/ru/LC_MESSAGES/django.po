@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 11:19+0300\n"
+"POT-Creation-Date: 2026-01-04 11:32+0300\n"
 "PO-Revision-Date: 2026-01-04 09:30+0300\n"
 "Last-Translator: Gemini\n"
 "Language-Team: Russian <ru@li.org>\n"
@@ -19,13 +19,60 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: _settings/settings.py:116
+#: _settings/settings.py:117
 msgid "Russian"
 msgstr "Русский"
 
-#: _settings/settings.py:117
+#: _settings/settings.py:118
 msgid "English"
 msgstr "Английский"
+
+#: app_blog/templates/app_blog/article_detail.html:4
+#: app_home/templates/app_home/base.html:45
+msgid "Блог"
+msgstr ""
+
+#: app_blog/templates/app_blog/article_detail.html:13
+msgid "Нравится"
+msgstr ""
+
+#: app_blog/templates/app_blog/article_detail.html:22
+msgid "Комментарии"
+msgstr ""
+
+#: app_blog/templates/app_blog/article_detail.html:29
+msgid "Комментариев пока нет."
+msgstr ""
+
+#: app_blog/templates/app_blog/article_detail.html:35
+#, fuzzy
+#| msgid "Отправить заявку"
+msgid "Оставить комментарий"
+msgstr "Отправить заявку"
+
+#: app_blog/templates/app_blog/article_detail.html:39
+#, fuzzy
+#| msgid "Отправить заявку"
+msgid "Отправить"
+msgstr "Отправить заявку"
+
+#: app_blog/templates/app_blog/article_detail.html:43
+msgid "Войдите"
+msgstr ""
+
+#: app_blog/templates/app_blog/article_detail.html:43
+msgid "чтобы оставить комментарий."
+msgstr ""
+
+#: app_blog/templates/app_blog/article_list.html:4
+#, fuzzy
+#| msgid "Контакты"
+msgid "Блог - WebCraft Studio"
+msgstr "Контакты"
+
+#: app_blog/templates/app_blog/article_list.html:9
+msgid "Наш Блог"
+msgstr ""
 
 #: app_home/templates/app_home/about_page.html:4
 msgid "О нас - WebCraft Studio"
@@ -52,11 +99,11 @@ msgstr "Почему мы?"
 msgid "Отзывы"
 msgstr ""
 
-#: app_home/templates/app_home/base.html:45
+#: app_home/templates/app_home/base.html:46
 msgid "Контакты"
 msgstr "Контакты"
 
-#: app_home/templates/app_home/base.html:58
+#: app_home/templates/app_home/base.html:59
 msgid "Все права защищены."
 msgstr "Все права защищены."
 

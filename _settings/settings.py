@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'app_home',
     'app_reviews',
+    'app_blog',
 ]
 
 MIDDLEWARE = [

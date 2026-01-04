@@ -1,0 +1,47 @@
+{% extends 'app_home/base.html' %}
+{% load i18n %}
+
+{% block title %}{{ article.title }} - {% trans "Блог" %}{% endblock %}
+
+{% block content %}
+<section id="article-detail" class="article-detail-section">
+    <div class="container">
+        <h1>{{ article.title }}</h1>
+        <div class="article-meta">
+            <span>👍 {{ article.likes }}</span>
+            <span>{{ article.created_at|date:"d.m.Y" }}</span>
+            <a href="{% url 'app_blog:like_article' article.pk %}" class="btn btn-primary">{% trans "Нравится" %}</a>
+        </div>
+        <div class="article-content">
+            {{ article.content|linebreaks }}
+        </div>
+
+        <hr>
+
+        <div class="comments-section">
+            <h3>{% trans "Комментарии" %}</h3>
+            {% for comment in article.comments.all %}
+                <div class="comment-card">
+                    <p><strong>{{ comment.author.username }}</strong> ({{ comment.created_at|date:"d.m.Y" }})</p>
+                    <p>{{ comment.comment }}</p>
+                </div>
+            {% empty %}
+                <p>{% trans "Комментариев пока нет." %}</p>
+            {% endfor %}
+        </div>
+
+        {% if user.is_authenticated %}
+            <div class="comment-form">
+                <h3>{% trans "Оставить комментарий" %}</h3>
+                <form method="post" action="{% url 'app_blog:add_comment' article.pk %}">
+                    {% csrf_token %}
+                    <textarea name="comment" required></textarea>
+                    <button type="submit" class="btn btn-primary">{% trans "Отправить" %}</button>
+                </form>
+            </div>
+        {% else %}
+            <p><a href="{% url 'admin:login' %}?next={{ request.path }}">{% trans "Войдите" %}</a>, {% trans "чтобы оставить комментарий." %}</p>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'app_home/base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Блог - WebCraft Studio" %}{% endblock %}
+
+{% block content %}
+<section id="blog" class="blog-section">
+    <div class="container">
+        <h2>{% trans "Наш Блог" %}</h2>
+        <div class="article-list">
+            {% for article in articles %}
+                <div class="article-card">
+                    <h3><a href="{% url 'app_blog:article_detail' article.pk %}">{{ article.title }}</a></h3>
+                    <p>{{ article.content|truncatewords:30 }}</p>
+                    <div class="article-footer">
+                        <span>👍 {{ article.likes }}</span>
+                        <span>{{ article.created_at|date:"d.m.Y" }}</span>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

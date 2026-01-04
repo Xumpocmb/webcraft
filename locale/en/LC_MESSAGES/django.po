@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 11:19+0300\n"
-"PO-Revision-Date: 2026-01-04 11:30+0300\n"
+"POT-Creation-Date: 2026-01-04 11:32+0300\n"
+"PO-Revision-Date: 2026-01-04 11:35+0300\n"
 "Last-Translator: Gemini\n"
 "Language-Team: English <en@li.org>\n"
 "Language: en\n"
@@ -17,13 +17,54 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: _settings/settings.py:116
+#: _settings/settings.py:117
 msgid "Russian"
 msgstr "Russian"
 
-#: _settings/settings.py:117
+#: _settings/settings.py:118
 msgid "English"
 msgstr "English"
+
+#: app_blog/templates/app_blog/article_detail.html:4
+#: app_home/templates/app_home/base.html:45
+msgid "Блог"
+msgstr "Blog"
+
+#: app_blog/templates/app_blog/article_detail.html:13
+msgid "Нравится"
+msgstr "Like"
+
+#: app_blog/templates/app_blog/article_detail.html:22
+msgid "Комментарии"
+msgstr "Comments"
+
+#: app_blog/templates/app_blog/article_detail.html:29
+msgid "Комментариев пока нет."
+msgstr "No comments yet."
+
+#: app_blog/templates/app_blog/article_detail.html:35
+msgid "Оставить комментарий"
+msgstr "Leave a comment"
+
+#: app_blog/templates/app_blog/article_detail.html:39
+msgid "Отправить"
+msgstr "Submit"
+
+#: app_blog/templates/app_blog/article_detail.html:43
+msgid "Войдите"
+msgstr "Log in"
+
+#: app_blog/templates/app_blog/article_detail.html:43
+msgid "чтобы оставить комментарий."
+msgstr "to leave a comment."
+
+#: app_blog/templates/app_blog/article_list.html:4
+msgid "Блог - WebCraft Studio"
+msgstr "Blog - WebCraft Studio"
+
+#: app_blog/templates/app_blog/article_list.html:9
+msgid "Наш Блог"
+msgstr "Our Blog"
 
 #: app_home/templates/app_home/about_page.html:4
 msgid "О нас - WebCraft Studio"
@@ -50,17 +91,15 @@ msgstr "Why Us?"
 msgid "Отзывы"
 msgstr "Reviews"
 
-#: app_home/templates/app_home/base.html:45
+#: app_home/templates/app_home/base.html:46
 msgid "Контакты"
 msgstr "Contact"
 
-#: app_home/templates/app_home/base.html:58
+#: app_home/templates/app_home/base.html:59
 msgid "Все права защищены."
 msgstr "All rights reserved."
 
 #: app_home/templates/app_home/contact_page.html:4
-#, fuzzy
-#| msgid "Контакты"
 msgid "Контакты - WebCraft Studio"
 msgstr "Contact - WebCraft Studio"
 
@@ -203,22 +242,20 @@ msgid "Отзывы наших клиентов"
 msgstr "Our Clients' Reviews"
 
 #: app_home/templates/app_home/index.html:25
+#: app_reviews/templates/app_reviews/reviews_page.html:15
 msgid "Оставить отзыв"
 msgstr "Leave a review"
 
 #: app_home/templates/app_home/services_page.html:4
-#, fuzzy
-#| msgid "Наши услуги"
 msgid "Наши услуги - WebCraft Studio"
 msgstr "Our Services - WebCraft Studio"
 
 #: app_home/templates/app_home/why_us_page.html:4
-#, fuzzy
-#| msgid "Почему мы?"
 msgid "Почему мы? - WebCraft Studio"
 msgstr "Why Us? - WebCraft Studio"
 
 #: app_reviews/templates/app_reviews/includes/reviews.html:7
+#: app_reviews/templates/app_reviews/review_list.html:7
 msgid "Оценка:"
 msgstr "Rating:"
 
@@ -227,7 +264,5 @@ msgid "Отзывы - WebCraft Studio"
 msgstr "Reviews - WebCraft Studio"
 
 #: app_reviews/templates/app_reviews/reviews_page.html:19
-#, fuzzy
-#| msgid "Отправить заявку"
 msgid "Отправить отзыв"
 msgstr "Send review"
