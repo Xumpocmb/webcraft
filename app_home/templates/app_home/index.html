@@ -1,0 +1,140 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="{{ request.LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "WebCraft Studio - Создание и Продвижение Сайтов" %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="#" class="logo">WebCraft Studio</a>
+                <ul>
+                    <li><a href="#about">{% trans "О нас" %}</a></li>
+                    <li><a href="#services">{% trans "Услуги" %}</a></li>
+                    <li><a href="#why-us">{% trans "Почему мы?" %}</a></li>
+                    <li><a href="#contact">{% trans "Контакты" %}</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <form action="{% url 'set_language' %}" method="post">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ redirect_to }}">
+                        <select name="language" onchange="this.form.submit()">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% get_available_languages as LANGUAGES %}
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                                <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                                    {{ language.name_local }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="container">
+                <h1>{% trans "Создаем будущее вашего бизнеса в цифровом мире" %}</h1>
+                <p>{% trans "Ваш надежный партнер в разработке и продвижении сайтов" %}</p>
+                <a href="#contact" class="btn btn-primary">{% trans "Обсудить проект" %}</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>{% trans "О нас" %}</h2>
+                <p><strong>WebCraft Studio</strong> — {% trans "это команда профессионалов, объединенных страстью к веб-разработке и стремлением к совершенству. Мы начали свой путь в 2010 году как небольшое сообщество единомышленников и быстро выросли в полноценную студию, способную решать самые сложные и нестандартные задачи. За годы работы мы реализовали более 300 успешных проектов, от небольших стартапов до крупных федеральных компаний. Наша экспертиза охватывает широкий спектр технологий, включая Python, Django, React, и глубокое понимание принципов UI/UX дизайна. Мы гордимся тем, что каждый наш проект — это не просто сайт, а эффективный инструмент для достижения бизнес-целей наших клиентов." %}</p>
+                <p>{% trans "Мы верим, что успешный проект — это результат тесного сотрудничества с клиентом. Поэтому мы всегда остаемся на связи, прислушиваемся к вашим идеям и предоставляем полную прозрачность на всех этапах разработки. Наша цель — не просто создать сайт, а стать вашим долгосрочным партнером в мире цифровых технологий, помогая вашему бизнесу расти и процветать." %}</p>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2>{% trans "Наши услуги" %}</h2>
+                <div class="services-grid">
+                    {% for service in services %}
+                        <div class="service-card">
+                            <h3>{{ service.name }}</h3>
+                            <p>{{ service.description }}</p>
+                            <span class="price">{{ service.price|floatformat:2 }} ₽</span>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <section id="why-us" class="why-us-section">
+            <div class="container">
+                <h2>{% trans "Почему стоит выбрать нас?" %}</h2>
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <h3>{% trans "Индивидуальный подход" %}</h3>
+                        <p>{% trans "Мы глубоко погружаемся в специфику вашего бизнеса, чтобы предложить решения, идеально соответствующие вашим целям и задачам." %}</p>
+                    </div>
+                    <div class="advantage-card">
+                        <h3>{% trans "Экспертиза и опыт" %}</h3>
+                        <p>{% trans "Наша команда состоит из высококвалифицированных специалистов с многолетним опытом в веб-разработке и интернет-маркетинге." %}</p>
+                    </div>
+                    <div class="advantage-card">
+                        <h3>{% trans "Комплексные решения" %}</h3>
+                        <p>{% trans "Мы предлагаем полный спектр услуг — от проектирования и разработки до продвижения и поддержки, обеспечивая рост вашего бизнеса 'под ключ'." %}</p>
+                    </div>
+                    <div class="advantage-card">
+                        <h3>{% trans "Прозрачность и поддержка" %}</h3>
+                        <p>{% trans "Вы всегда будете в курсе хода проекта. Мы предоставляем регулярные отчеты и оперативную поддержку на всех этапах сотрудничества." %}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>{% trans "Свяжитесь с нами" %}</h2>
+                <p>{% trans "Оставьте свои данные, и мы свяжемся с вами в ближайшее время!" %}</p>
+                <form id="contact-form" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="name">{% trans "Ваше имя:" %}</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">{% trans "Номер телефона:" %}</label>
+                        <input type="tel" id="phone" name="phone_number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">{% trans "Ваше сообщение:" %}</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">{% trans "Отправить заявку" %}</button>
+                    <div id="form-messages" class="form-messages">
+                        {% if messages %}
+                            <ul class="messages">
+                                {% for message in messages %}
+                                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; {% now "Y" %} WebCraft Studio. {% trans "Все права защищены." %}</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
