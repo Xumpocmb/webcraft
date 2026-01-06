@@ -17,7 +17,7 @@
                 <label for="message">{% trans "Ваше сообщение:" %}</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">{% trans "Отправить заявку" %}</button>
+            <button type="submit" class="btn btn-primary" onclick="ym(106154478, 'reachGoal', 'заявка'); return true;" value="request">{% trans "Отправить заявку" %}</button>
             <div id="form-messages" class="form-messages">
                 {% if messages %}
                     <ul class="messages">
