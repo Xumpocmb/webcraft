@@ -480,6 +480,35 @@ section:nth-child(even) {
     border: 2px solid #61dafb;
 }
 
+/* Service Detail Page */
+.service-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.service-detail h2 {
+    text-align: center;
+    color: #61dafb;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.service-info {
+    background-color: #282c34;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.service-description {
+    font-size: 1.2em;
+    line-height: 1.7;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+
 /* Blog Section */
 .blog-section {
     background-color: #1a1a1a;
