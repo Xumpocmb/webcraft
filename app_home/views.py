@@ -30,6 +30,37 @@ def why_us_page(request):
 
 
 def contact_page(request):
+    if request.method == "POST":
+        name = request.POST.get("name")
+        phone_number = request.POST.get("phone_number")
+        message_text = request.POST.get("message")
+
+        if not all([name, phone_number, message_text]):
+            messages.error(request, "Пожалуйста, заполните все поля формы.")
+            return redirect(request.META.get("HTTP_REFERER", "index"))
+
+        # Save to database
+        contact_request = ContactRequest.objects.create(name=name, phone_number=phone_number, message=message_text)
+
+        # Send to Telegram
+        logger.info(f"Attempting to send Telegram message. Token: {TELEGRAM_BOT_TOKEN}, Chat ID: {TELEGRAM_CHAT_ID}")
+        if TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID:
+            telegram_message = f"Новая заявка с сайта:\n" f"Имя: {name}\n" f"Телефон: {phone_number}\n" f"Сообщение: {message_text}"
+            telegram_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+            payload = {"chat_id": TELEGRAM_CHAT_ID, "text": telegram_message}
+            try:
+                response = requests.post(telegram_url, data=payload)
+                response.raise_for_status()  # Raise an exception for HTTP errors
+                logger.info("Telegram message sent successfully.")
+                messages.success(request, "Ваша заявка успешно отправлена!")
+            except requests.exceptions.RequestException as e:
+                logger.error(f"Error sending to Telegram: {e}, response: {response.text}")
+                messages.error(request, "Произошла ошибка при отправке заявки в Telegram. Пожалуйста, попробуйте еще раз.")
+        else:
+            logger.warning("Telegram configuration is incomplete. TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID is missing.")
+            messages.warning(request, "Конфигурация Telegram не завершена. Заявка сохранена, но не отправлена в Telegram.")
+
+        return redirect(request.META.get("HTTP_REFERER", "index"))
     return render(request, "app_home/contact_page.html")
 
 
