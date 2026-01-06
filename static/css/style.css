@@ -608,6 +608,11 @@ footer {
 .footer-contact-column {
     flex: 1;
     min-width: 250px;
+    text-align: center;
+}
+
+.footer-nav-column {
+    text-align: center;
 }
 
 .footer-nav-column h3,
@@ -622,6 +627,7 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: inline-block;
 }
 
 .footer-nav-links li {
@@ -644,9 +650,21 @@ footer {
     font-size: 1.1em;
 }
 
+.social-links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.social-links-list li {
+    margin-bottom: 10px;
+}
+
 .social-link {
     color: #61dafb;
     text-decoration: none;
+    font-size: 1.1em;
     transition: color 0.3s ease;
 }
 
