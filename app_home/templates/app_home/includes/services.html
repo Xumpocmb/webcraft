@@ -4,27 +4,31 @@
         <h2>{% trans "Наши услуги" %}</h2>
         <div class="services-grid">
             {% for service in services %}
-                <script type="application/ld+json">
-                {
-                  "@context": "https://schema.org",
-                  "@type": "Service",
-                  "serviceType": "{{ service.name }}",
-                  "provider": {
-                    "@type": "Organization",
-                    "name": "WebCraft Studio"
-                  },
-                  "description": "{{ service.description }}",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "{{ service.price }}",
-                    "priceCurrency": "USD"
-                  }
-                }
-                </script>
                 <div class="service-card">
-                    <h3>{{ service.name }}</h3>
-                    <p>{{ service.description }}</p>
-                    <span class="price">{{ service.price }} $</span>
+                    <script type="application/ld+json">
+                    {
+                      "@context": "https://schema.org",
+                      "@type": "Service",
+                      "serviceType": "{{ service.name }}",
+                      "provider": {
+                        "@type": "Organization",
+                        "name": "WebCraft Studio"
+                      },
+                      "description": "{{ service.description }}",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "{{ service.price }}",
+                        "priceCurrency": "USD"
+                      }
+                    }
+                    </script>
+                    <div class="service-card-content">
+                        <h3>{{ service.name }}</h3>
+                        <p class="text-center">{{ service.description }}</p>
+                        <div class="service-price">
+                            <span class="price">{{ service.price }} $</span>
+                        </div>
+                    </div>
                 </div>
             {% endfor %}
         </div>

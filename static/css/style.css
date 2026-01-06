@@ -3,10 +3,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a; /* Dark background */
-    color: #f0f0f0; /* Light text */
+    background-color: #1a1a1a;
+    /* Dark background */
+    color: #f0f0f0;
+    /* Light text */
     line-height: 1.6;
-    padding-top: 80px; /* Adjust this value to match your header's height */
+    padding-top: 66px;
 }
 
 .container {
@@ -15,8 +17,10 @@ body {
     padding: 20px;
 }
 
-h1, h2, h3 {
-    color: #61dafb; /* Accent color for headings */
+h1,
+h2,
+h3 {
+    color: #61dafb;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -43,7 +47,7 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background-color: #a4f2ff;
+    background-color: #072e34;
 }
 
 .text-center {
@@ -53,9 +57,10 @@ a:hover {
 /* Header & Navigation */
 header {
     background-color: #282c34;
-    padding: 20px 0;
+    padding: 5px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    position: fixed; /* Fixed position */
+    position: fixed;
+    /* Fixed position */
     top: 0;
     left: 0;
     width: 100%;
@@ -137,7 +142,7 @@ nav .container {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/static/images/hero-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/static/images/hero-bg.jpg') no-repeat center center/cover;
     text-align: center;
     padding: 100px 20px;
     color: #f0f0f0;
@@ -289,13 +294,18 @@ section:nth-child(even) {
 
 .reviews-carousel {
     display: flex;
-    flex-direction: row; /* Explicitly set to row */
+    flex-direction: row;
+    /* Explicitly set to row */
     overflow-x: auto;
     gap: 20px;
-    padding-bottom: 20px; /* For scrollbar visibility */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-    scrollbar-width: thin; /* Firefox */
-    scrollbar-color: #61dafb #282c34; /* Firefox */
+    padding-bottom: 20px;
+    /* For scrollbar visibility */
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling on iOS */
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: #61dafb #282c34;
+    /* Firefox */
 }
 
 /* Webkit scrollbar (Chrome, Safari) */
@@ -314,12 +324,14 @@ section:nth-child(even) {
 }
 
 .review-card {
-    flex: 0 0 350px; /* Fixed width for horizontal cards */
-    flex-shrink: 0; /* Prevent shrinking */
+    flex: 0 0 350px;
+    /* Fixed width for horizontal cards */
+    flex-shrink: 0;
+    /* Prevent shrinking */
     background-color: #282c34;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -342,14 +354,16 @@ section:nth-child(even) {
 
 .review-rating {
     font-weight: 700;
-    color: #ffc107; /* Star color */
+    color: #ffc107;
+    /* Star color */
 }
 
 .review-body p {
     color: #ccc;
     font-size: 1.05em;
     line-height: 1.7;
-    flex-grow: 1; /* Allow comment to take available space */
+    flex-grow: 1;
+    /* Allow comment to take available space */
 }
 
 .review-footer {
@@ -363,13 +377,16 @@ section:nth-child(even) {
 
 .like-btn {
     font-size: 1.1em;
-    color: #e91e63; /* Pink for likes */
+    color: #e91e63;
+    /* Pink for likes */
 }
 
 .replies {
     margin-top: 20px;
-    margin-left: 0; /* Remove left margin for horizontal layout */
-    border-left: none; /* Remove left border */
+    margin-left: 0;
+    /* Remove left margin for horizontal layout */
+    border-left: none;
+    /* Remove left border */
     padding-left: 0;
 }
 
@@ -403,6 +420,66 @@ section:nth-child(even) {
     margin: 0;
 }
 
+/* Services Section */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.service-card {
+    background-color: #282c34;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.service-card-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card h3 {
+    color: #61dafb;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.service-card p {
+    color: #ccc;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.service-price {
+    text-align: center;
+    margin-top: auto;
+}
+
+.service-price .price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #61dafb;
+    display: inline-block;
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #61dafb;
+}
+
 /* Blog Section */
 .blog-section {
     background-color: #1a1a1a;
@@ -418,7 +495,7 @@ section:nth-child(even) {
     background-color: #282c34;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .article-card h3 a {
@@ -495,11 +572,15 @@ footer {
 /* Responsive Design */
 @media (max-width: 992px) {
     .container {
-        padding: 15px;
+        padding: 10px;
     }
 
     nav .container {
         gap: 20px;
+    }
+
+    .logo {
+        font-size: 1.0em;
     }
 
     .header-main-group {
@@ -509,15 +590,15 @@ footer {
     .burger-menu {
         display: flex;
     }
-    
+
     .language-switcher {
         margin-left: auto;
     }
-    
+
     .nav-links {
         display: none;
         position: absolute;
-        top: 80px; /* Adjusted to header height */
+        top: 64px;
         left: 0;
         width: 100%;
         background-color: #282c34;
@@ -538,12 +619,13 @@ footer {
     .hero h1 {
         font-size: 2.8em;
     }
-    
+
     .hero p {
         font-size: 1.1em;
     }
 
-    .services-grid, .advantages-grid {
+    .services-grid,
+    .advantages-grid {
         grid-template-columns: 1fr;
     }
 
